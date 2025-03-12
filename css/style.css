@@ -19,36 +19,41 @@ body{
     position: relative;
 }
 
-.list1{
-    margin-top: 1%;
+.nav-links{
+    margin-top: 2rem;
     display: flex;
-    list-style-type: none;
-    position: absolute;
-    top: 0.572%;
-    left: 17.5%;
+    flex-direction: column;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.3s;
 }
 
-.list1 li{
-    margin-right: 9%;
-}
-
-.list1 li a{
+.nav-links .nav-link{
     text-decoration: none;
     color: black;
     transition: all 0.3s;
 }
 
-.list1 li a:hover{
+.nav-link-btn{
+    padding: 1.2rem 0;
+    text-align: center;
+    border-top: 1px solid gray;
+    
+}
+
+.show-links{
+    height: 296.88px;
+}
+
+
+.nav-links .nav-link:hover{
     color: rgb(101, 101, 255);
 }
 
 .navContact{
-    position: absolute;
-    top: 0.7%;
-    left: 90%;
     background-color: rgb(101, 101, 255);
     width: 6rem;
-    height: 1.1%;
+    height: 1.8rem;
     border-radius: 5px;
     color: white;
     border: none;
@@ -61,11 +66,43 @@ body{
     background-color: rgb(60, 60, 153);
 }
 
-.nav-btn{
-    display: none;
+.small-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media screen and (max-width: 1250px) {
+.nav-btn {
+    display: block;
+    background-color: rgb(101, 101, 255);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    padding: 3px 6px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: rgb(60, 60, 153);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 1250px) {
+
+    .nav-btn {
+            display: none;
+        }
+
     .list1{
         position: absolute;
         top: 5rem;
@@ -82,107 +119,14 @@ body{
         padding: 1rem 0;
     }
 
-    .nav-btn {
-        display:block;
-        background-color: rgb(101, 101, 255);
-        border: none;
-        color: white;
-        width: 40px;
-        height: 25px;
-        border-radius: 3px;
-        font-size: 1.1rem;
-        padding: 3px 6px;
-        transition: all 0.3s;
-    }
+    
 
-    .logo{
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-btn:hover{
-        background-color: rgb(60, 60, 153);
-    }
-
-    .small-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    
 
     
 
     .navContact{
         display: block;
-        position: absolute;
-        top:20rem;
-        left: 16.6rem;
-        /* overflow: hidden;
-        height: 0; */
-        
-
     } 
-    
-    .navC-1{
-        border-top: 1px solid gray;
-        width: 100%;
-        position: absolute;
-        top: 5.4rem;
-        overflow: hidden;
-        height: 0;
-    }
-    .navC-2{
-        border-top: 1px solid gray;
-        width: 100%;
-        position: absolute;
-        top: 8.7rem;
-        overflow: hidden;
-        height: 0;
-    }
-    .navC-3{
-        border-top: 1px solid gray;
-        width: 100%;
-        position: absolute;
-        top: 12rem;
-        overflow: hidden;
-        height: 0;
-    }
-    .navC-4{
-        border-top: 1px solid gray;
-        width: 100%;
-        position: absolute;
-        top: 15.3rem;
-        overflow: hidden;
-        height: 0;
-    }
-    .navC-5{
-        border-top: 1px solid gray;
-        width: 100%;
-        position: absolute;
-        top: 18.5rem;
-        overflow: hidden;
-        height: 0;
-    }
 
-    .show-list{
-        height: 204px;
-    }
-    .show-navC{
-        height: 2px;
-    }
-    .show-1{
-        height: 1px;
-    }
-    .show-2{
-        height: 1px;
-    }
-    .show-3{
-        height: 1px;
-    }
-    .show-4{
-        height: 1px;
-    }
-    .show-5{
-        height: 1px;
-    }
 }
