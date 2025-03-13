@@ -95,38 +95,41 @@ body{
     align-items: center;
 }
 
+bigImg{
+    /* width: 100%; */
+}
+
 
 
 @media screen and (min-width: 1250px) {
 
     .nav-btn {
-            display: none;
-        }
+        display: none;
+    }
 
-    .list1{
-        position: absolute;
-        top: 5rem;
-        left: 15rem;
+    .nav-links{
+        margin-top: 2rem;
         display: flex;
-        flex-direction: column;
-        /* overflow: hidden;
-        height: 0;  */
+        flex-direction: row;
+        align-items: center;
+        height: 296.88px;
+        position: absolute;
+        top: -8.91rem;
+        left: 14.5rem;
+    } 
+    
+    .nav-links .nav-link {
+        margin-right: 1.2rem;
     }
 
-    .list1 li{
-        display: block;
-        width: 100%;
-        padding: 1rem 0;
+    .nav-link-btn{
+        padding: 0;
+        text-align: none;
+        border-top: none;
     }
-
-    
-
-    
-
-    
 
     .navContact{
-        display: block;
+        margin-left: 32.8rem;
     } 
 
 }
