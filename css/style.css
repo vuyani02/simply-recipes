@@ -1,9 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    background-color: rgb(243, 243, 243);
+}
+
+.center{
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
     color: black;
-    background-color: rgb(243, 243, 243);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -12,11 +20,15 @@ body{
 }
 
 .container{
-    width: 82vw;
-    height: 3000px;
+    width: 89vw;
+    height: 64rem;
     /* border: 2px solid black; */
     padding-top: 20px;
     position: relative;
+}
+
+.increase-h{
+    height: 83rem;
 }
 
 .nav-links{
@@ -26,6 +38,11 @@ body{
     overflow: hidden;
     height: 0;
     transition: all 0.3s;
+}
+
+.nav-links-1{
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-links .nav-link{
@@ -54,7 +71,7 @@ body{
     background-color: rgb(101, 101, 255);
     width: 6rem;
     height: 1.8rem;
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
     border: none;
     font-size: 1.2rem;
@@ -95,9 +112,130 @@ body{
     align-items: center;
 }
 
-bigImg{
-    /* width: 100%; */
+.bigImg{
+    width: 100%;
+    height: 16rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/main.jpeg) center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2.9rem;
 }
+
+.meals{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.meal-1{
+    background: url(../img/recipes/recipe-1.jpeg) center/cover no-repeat;
+    border-radius: 5px;
+    width: 43.2vw;
+    height: 10rem;
+    margin-bottom: 6rem;
+}
+.meal-2{
+    background: url(../img/recipes/recipe-2.jpeg) center/cover no-repeat;
+    border-radius: 5px;
+    width: 43.2vw;
+    height: 10rem;
+    margin-bottom: 6rem;
+}
+.meal-3{
+    background: url(../img/recipes/recipe-3.jpeg) center/cover no-repeat;
+    border-radius: 5px;
+    width: 43.2vw;
+    height: 10rem;
+    margin-bottom: 6rem;
+}
+.meal-4{
+    background: url(../img/recipes/recipe-4.jpeg) center/cover no-repeat;
+    border-radius: 5px;
+    width: 43.2vw;
+    height: 10rem;
+    margin-bottom: 6rem;
+}
+
+.recipe-name{
+    text-decoration:none;
+    color: rgb(17, 17, 17);
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    margin-top: 11rem;
+}
+
+.prep{
+    color: rgb(81, 85, 114);
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beef{
+    font-size: 0.85rem;
+    margin: 1rem 7rem 0rem 0;
+    color: rgb(81, 85, 114);
+    transition: all 0.3s;
+}
+
+.beef:hover{
+    color: rgb(105, 42, 189);
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    margin-top: 4rem;
+    height: 4rem;
+    color: white;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 550px) {
+
+    .container {
+        height: 117rem;
+    }
+
+    .increase-h {
+        height: 135rem;
+    }
+
+    .meals{
+        flex-direction: column;
+    }
+
+    .meal-big{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .recipe-name{
+        margin-top: 16rem;
+    }
+
+    .beef{
+        margin-right: 4rem;
+    }
+}
+
 
 
 
@@ -107,16 +245,31 @@ bigImg{
         display: none;
     }
 
-    .nav-links{
-        margin-top: 2rem;
+    .container{
+        height: 55rem;
+        width: 82vw;
+    }
+
+    nav{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-links{
+        flex-grow: 1;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        height: 296.88px;
-        position: absolute;
-        top: -8.91rem;
-        left: 14.5rem;
+        height: auto;
+        margin-left: 2rem;
     } 
+
+    .nav-links-1 {
+        flex-direction: row;
+    }
     
     .nav-links .nav-link {
         margin-right: 1.2rem;
@@ -127,9 +280,35 @@ bigImg{
         text-align: none;
         border-top: none;
     }
+    
+    .bigImg {
+        margin-top: 3.5rem;
+    }
 
-    .navContact{
-        margin-left: 32.8rem;
-    } 
+    .content{
+        display: flex;
+    }
+
+    .meals{
+        order: 1;
+        margin-left: 8rem;
+    }
+
+    .meal-big {
+        width: 21vw;
+        height: 10rem;
+    }
+
+    .recipes{
+        flex-direction: column;
+    }
+
+    .header{
+        margin-bottom: 0.5rem;
+    }
+
+    .beef{
+        margin: 0.3rem 0;
+    }
 
 }
