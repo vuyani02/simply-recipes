@@ -23,7 +23,7 @@ body{
 .container{
     width: 89vw;
     height: 64rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding-top: 20px;
     position: relative;
 }
@@ -258,6 +258,50 @@ footer{
     font-size: 2.7rem;
 }
 /* 404 end */
+
+/* start of about */
+.text h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.text p{
+    font-size: 1.2rem;
+}
+
+.content-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.content-about div{
+    height: 300px;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 4rem;
+    background: url(../img/about.jpeg) center/cover;
+}
+
+.source h1{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .content-about{
+        flex-direction: row;
+    }
+
+    .content-about div{
+        margin-left: 5rem;
+        height: 350px;
+    }
+}
+/* end of about */
 
 @media screen and (max-width: 550px) {
 
