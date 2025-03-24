@@ -225,7 +225,7 @@ footer{
 .container-new{
     width: 89vw;
     height: 6rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding-top: 20px;
 }
 
@@ -380,6 +380,83 @@ label{
 }
 /* tags end */
 
+/* start of single-recipe */
+.upper-text {
+    display: grid;
+    gap: 3.5rem 4rem;
+    margin-top: 2.5rem;
+}
+
+.s-reci-img{
+    width: 100%;
+    height: 17rem;
+    background: url(../img/recipes/recipe-4.jpeg) center/cover no-repeat;
+    border-radius: 4px;
+}
+
+.text-sr h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.stats{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.icons{
+    color: rgb(76, 76, 255);
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.numbers{
+    color: rgb(61, 61, 61);
+    margin-top: 0.3rem;
+}
+
+.singe-reci-tags{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+}
+
+.singe-reci-tags span{
+    margin-right: 0.3rem;
+}
+
+.small-btn{
+    margin-right: 0.4rem;
+    border: none;
+    background-color: rgb(76, 76, 255);
+    color: #fff;
+    /* height: 1.5rem; */
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.small-btn:hover{
+    background-color: rgb(28, 28, 100);
+}
+
+/* start of single-recipe */
+
 @media screen and (min-width: 668px) {
         .contact-form {
             width: 589px;
@@ -520,6 +597,11 @@ label{
 
     .tags-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .upper-text {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 
 }
