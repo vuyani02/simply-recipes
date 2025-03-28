@@ -662,7 +662,11 @@ label{
     .lower-text {
         grid-template-columns: 800px 1fr;
         align-items: start;
-     }
+    }
+
+    .page {
+        margin-top: 2rem;
+    }
 
 }
 
