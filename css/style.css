@@ -23,9 +23,8 @@ body{
 .container{
     width: 89vw;
     height: 64rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding-top: 20px;
-    position: relative;
 }
 
 .increase-h{
@@ -118,6 +117,7 @@ body{
     height: 16rem;
     border-radius: 4px;
     margin-top: 2rem;
+    margin-bottom: 2.5rem;
     background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/main.jpeg) center/cover no-repeat;
     color: white;
     text-align: center;
@@ -126,7 +126,7 @@ body{
 }
 
 .meals{
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem 1rem;
@@ -268,7 +268,7 @@ footer{
 .content-about{
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     /* border: 2px solid red; */
 }
 
@@ -346,7 +346,7 @@ label{
     .tags-container{
         display: grid;
         gap: 2rem 2rem;
-        margin-top: 1.6rem;
+        /* margin-top: 1.6rem; */
         /* height: calc(100vh - (6rem + 4rem)); */
     }
     .tags-btn{
@@ -453,6 +453,61 @@ label{
 
 .small-btn:hover{
     background-color: rgb(28, 28, 100);
+}
+
+.lower-text{
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem 5rem;
+}
+
+.instructions h5, .ingre-tools h5, .tools h5{
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.line-step{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.line{
+    border: 1.9px solid rgb(194, 200, 207);
+    width: 100%;
+    height: 0;
+}
+
+.parag{
+    margin-bottom: 1.5rem;
+}
+
+.step{
+    color: rgb(76, 76, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    width: 80px;
+    margin-right: 1.2rem;
+}
+
+.tools{
+    margin-top: 3rem;
+}
+
+.ingre-tools h5, .tools h5{
+    margin-bottom: 0.4rem;
+}
+
+.line-1{
+    border-bottom: 2px solid rgb(194, 200, 207);
+    padding: 1.3rem 0;
+}
+
+.color{
+    color: rgb(76, 76, 255);;
 }
 
 /* start of single-recipe */
@@ -603,6 +658,11 @@ label{
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
+
+    .lower-text {
+        grid-template-columns: 800px 1fr;
+        align-items: start;
+     }
 
 }
 
